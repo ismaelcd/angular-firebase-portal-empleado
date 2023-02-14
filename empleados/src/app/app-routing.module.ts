@@ -1,7 +1,7 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { ListEmpleadosComponent } from './componets/list-empleados/list-empleados.component';
-import { CreateEmpleadoComponent } from './componets/create-empleado/create-empleado.component';
+import { ListEmpleadosComponent } from './empleados/list-empleados/list-empleados.component';
+import { CreateEmpleadoComponent } from './empleados/create-empleado/create-empleado.component';
 
 /* Aqui se definen las URL del proyecto */
 const routes: Routes = [
@@ -15,6 +15,6 @@ const routes: Routes = [
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
-  exports: [RouterModule]
+  exports: [RouterModule],
 })
-export class AppRoutingModule { }
+export class AppRoutingModule {}

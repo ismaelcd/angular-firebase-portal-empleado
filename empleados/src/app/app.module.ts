@@ -9,24 +9,24 @@ import { getFirestore, provideFirestore } from '@angular/fire/firestore';
 // Componentes
 
 import { AppComponent } from './app.component';
-import { ListEmpleadosComponent } from './componets/list-empleados/list-empleados.component';
-import { CreateEmpleadoComponent } from './componets/create-empleado/create-empleado.component';
-import { NavbarComponent } from './componets/navbar/navbar.component';
+import { ListEmpleadosComponent } from './empleados/list-empleados/list-empleados.component';
+import { CreateEmpleadoComponent } from './empleados/create-empleado/create-empleado.component';
+import { NavbarComponent } from './shared/navbar/navbar.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     ListEmpleadosComponent,
     CreateEmpleadoComponent,
-    NavbarComponent
+    NavbarComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    provideFirebaseApp(() => initializeApp({ })),
-    provideFirestore(() => getFirestore())
+    provideFirebaseApp(() => initializeApp({})),
+    provideFirestore(() => getFirestore()),
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}
